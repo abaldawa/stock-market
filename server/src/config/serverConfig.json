@@ -1,0 +1,13 @@
+{
+  "httpServer": {
+    "port": 3000
+  },
+  "mongodbConfig": {
+    "dbHost": "localhost",
+    "dbPort": "27023",
+    "dbName": "stocks_db",
+    "dbUser": "",
+    "dbPassword": "",
+    "authSource": ""
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "stockName": "Product 1 stock",
+    "stockId": "1",
+    "price": 33,
+    "currency": "EUR",
+    "quantity": 6,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-31T11:00:00.276Z"
+  },
+  {
+    "stockName": "Product 2 stock",
+    "stockId": "2",
+    "price": 56,
+    "currency": "EUR",
+    "quantity": 3,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-31T05:00:00.276Z"
+  },
+  {
+    "stockName": "Product 3 stock",
+    "stockId": "3",
+    "price": 98,
+    "currency": "EUR",
+    "quantity": 2,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-31T03:00:00.276Z"
+  },
+  {
+    "stockName": "Product 4 stock",
+    "stockId": "4",
+    "price": 59,
+    "currency": "EUR",
+    "quantity": 13,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-31T02:00:00.276Z"
+  },
+  {
+    "stockName": "Product 5 stock",
+    "stockId": "5",
+    "price": 20,
+    "currency": "EUR",
+    "quantity": 34,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-30T18:00:00.276Z"
+  },
+  {
+    "stockName": "Product 6 stock",
+    "stockId": "6",
+    "price": 104,
+    "currency": "EUR",
+    "quantity": 12,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-30T15:00:00.276Z"
+  },
+  {
+    "stockName": "Product 7 stock",
+    "stockId": "7",
+    "price": 299,
+    "currency": "EUR",
+    "quantity": 5,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-29T13:00:00.276Z"
+  },
+  {
+    "stockName": "Product 8 stock",
+    "stockId": "8",
+    "price": 39,
+    "currency": "EUR",
+    "quantity": 56,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-29T11:00:00.276Z"
+  },
+  {
+    "stockName": "Product 9 stock",
+    "stockId": "9",
+    "price": 64,
+    "currency": "EUR",
+    "quantity": 23,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-29T08:00:00.276Z"
+  },
+  {
+    "stockName": "Product 10 stock",
+    "stockId": "10",
+    "price": 76,
+    "currency": "EUR",
+    "quantity": 90,
+    "status": "AVAILABLE",
+    "createdAt": "2019-08-28T04:00:00.276Z"
+  }
+]
