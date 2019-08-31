@@ -62,7 +62,7 @@ async function addBoughtStockToUser( args = {} ) {
     }
 
     if( !userObj ) {
-        throw new Erro(`user _id: ${userId} not found in the DB`);
+        throw new Error(`user _id: ${userId} not found in the DB`);
     }
     // ---------------------------------------- 1. END ---------------------------------------------------------------------
 
