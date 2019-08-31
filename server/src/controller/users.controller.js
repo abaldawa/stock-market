@@ -26,10 +26,14 @@ async function sellStock( req, res ) {
         stockObj,
         userObj;
 
+    // --------------------- 1. Input validations ------------------------------
     if( !stockId || !userId ) {
         return res.status(400).send(`'stockId' and 'userId' required`);
     }
+    // ---------------------------- 1. END -------------------------------------
 
+
+    // -------------------- 2. Get 'userId' from DB ----------------------------
     [err, userObj] = await formatPromiseResult( getUserById(userId) );
 
     if(err) {
@@ -43,7 +47,10 @@ async function sellStock( req, res ) {
     if( !userObj.stocks || !userObj.stocks.length ) {
         return res.status(403).send(`user name: ${userObj.userName} does not have any stocks to sell`);
     }
+    // ---------------------------------- 2. END --------------------------------
 
+
+    // ------------------ 3. Check if the stock which the user is trying to sell exists with user --------
     stockObj = userObj.stocks.find( (stockItem) =>{
                     if( stockItem.stockId === stockId ) {
                         return true;
@@ -53,7 +60,10 @@ async function sellStock( req, res ) {
     if( !stockObj ) {
         return res.status(404).send(`user name: ${userObj.userName} does not have stock Id: ${stockId}`);
     }
+    // -------------------------------------------- 3. END ----------------------------------------------
 
+
+    // ----------------- 4. Create 'stock' record to sell so that users can buy them ---------------------
     [err] = await formatPromiseResult(
                     stocksController.addStock({
                         stockName: stockObj.stockName,
@@ -70,6 +80,7 @@ async function sellStock( req, res ) {
         logger.error(`Error while adding available stock in stocks collection. Error: ${err.stack || err}`);
         return res.status(500).send(`Error while adding available stock in stocks collection. Error: ${err}`);
     }
+    // ------------------------------------------ 4. END --------------------------------------------------
 
     res.send("SOLD");
 }
